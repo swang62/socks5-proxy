@@ -1,0 +1,9 @@
+services:
+  socks5:
+    image: serjs/go-socks5-proxy
+    environment:
+      - PROXY_USER=${PROXY_USER}
+      - PROXY_PASSWORD=${PROXY_PASSWORD}
+    ports:
+      - 8119:1080
+    restart: always
