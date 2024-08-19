@@ -4,6 +4,8 @@ services:
     environment:
       - PROXY_USER=${PROXY_USER}
       - PROXY_PASSWORD=${PROXY_PASSWORD}
+    labels:
+      com.centurylinklabs.watchtower.enable: "true"
     ports:
       - 8119:1080
     restart: always
